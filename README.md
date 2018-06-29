@@ -4,8 +4,7 @@
 ##Introduction
 
 TINet is a .NET wrapper for Tulip Indicators that provides access to all the
-technical analysis functions from the [Tulip
-Indicators](https://tulipindicators.org) library.
+technical analysis functions from the [Tulip Indicators](https://tulipindicators.org) library.
 
 ##Example Usage
 
@@ -41,6 +40,15 @@ Simple Moving Average example:
 
 
 Indicators that take more inputs, options, or outputs have exactly the same interface. You simply need to pass in the extra parameters.
+
+You can find the expected parameters at https://tulipindicators.org or you can see them programatically like so:
+
+```
+        Console.WriteLine(string.Join(", ", tinet.indicators.stoch.input_names()));  // high, low, close
+        Console.WriteLine(string.Join(", ", tinet.indicators.stoch.option_names())); // %k period, %k slowing period, %d period
+        Console.WriteLine(string.Join(", ", tinet.indicators.stoch.output_names())); // stoch_k, stoch_d
+```
+
 
 ```
         //Call Stochastic Oscillator, taking 3 inputs, 3 options, and 2 outputs.
