@@ -10,7 +10,7 @@ technical analysis functions from the [Tulip Indicators](https://tulipindicators
 
 In Visual Studio, create a new C# console application.
 
-Add a reference to `tinet.dll` (make sure you use the x86 or x64 version as appropriate).
+Add a reference to `tinet.dll`.
 
 All TINet indicators have the same interface. They take an array of inputs, an array of options, and an array of outputs.
 
