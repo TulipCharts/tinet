@@ -46,9 +46,9 @@ Indicators that take more inputs, options, or outputs have exactly the same inte
 You can find the expected parameters at https://tulipindicators.org or you can see them programatically like so:
 
 ```C#
-Console.WriteLine(string.Join(", ", tinet.indicators.stoch.input_names()));  // high, low, close
-Console.WriteLine(string.Join(", ", tinet.indicators.stoch.option_names())); // %k period, %k slowing period, %d period
-Console.WriteLine(string.Join(", ", tinet.indicators.stoch.output_names())); // stoch_k, stoch_d
+Console.WriteLine(string.Join(", ", tinet.indicators.stoch.inputs()));  // high, low, close
+Console.WriteLine(string.Join(", ", tinet.indicators.stoch.options())); // %k period, %k slowing period, %d period
+Console.WriteLine(string.Join(", ", tinet.indicators.stoch.outputs())); // stoch_k, stoch_d
 ```
 
 
